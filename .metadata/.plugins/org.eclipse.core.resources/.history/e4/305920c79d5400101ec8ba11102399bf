@@ -1,5 +1,0 @@
-package com.pelicula.repository;
-
-public interface PeliculaRepository {
-
-}

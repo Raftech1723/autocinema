@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791"/>
 			<item value="D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-usuario"/>
 			<item value="D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-sede"/>
 			<item value="D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-sala"/>
@@ -16,7 +17,6 @@
 			<item value="D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-home"/>
 			<item value="D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-gateway"/>
 			<item value="D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema"/>
-			<item value="D:\CERTUS\CICLO V\Soluciones MAR - 1791\jpa-demo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -10204,3 +10204,204 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2025-06-28 23:10:22,983 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-06-28 23:10:22,991 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
 2025-06-28 23:10:22,997 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-pelicula\src\test\resources
+2025-06-29 00:20:48,662 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-06-29 00:22:47,248 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.boletos:autocinema-boletos:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-boletos\pom.xml.
+2025-06-29 00:22:47,816 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.categoria:autocinema-categoria:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-categoria\pom.xml.
+2025-06-29 00:22:47,979 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.confiteria:autocinema-confiteria:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-confiteria\pom.xml.
+2025-06-29 00:22:48,118 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.estacionamiento:autocinema-estacionamiento:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-estacionamiento\pom.xml.
+2025-06-29 00:22:48,259 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.funciones:autocinema-funciones:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-funciones\pom.xml.
+2025-06-29 00:22:48,646 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.autocinema.gateway:autocinema-gateway:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-gateway\pom.xml.
+2025-06-29 00:22:48,787 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.home:autocinema-home:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-home\pom.xml.
+2025-06-29 00:22:48,937 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.metodopago:autocinema-metodopago:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-metodopago\pom.xml.
+2025-06-29 00:22:49,055 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.pelicula:autocinema-pelicula:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-pelicula\pom.xml.
+2025-06-29 00:22:49,196 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.reclamo:autocinema-reclamo:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-reclamo\pom.xml.
+2025-06-29 00:22:49,343 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.sala:autocinema-sala:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-sala\pom.xml.
+2025-06-29 00:22:49,496 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.sede:autocinema-sede:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-sede\pom.xml.
+2025-06-29 00:22:49,640 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.usuario:autocinema-usuarios:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-usuarios\pom.xml.
+2025-06-29 00:22:52,413 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-estacionamiento/src/main/java
+2025-06-29 00:22:52,414 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-estacionamiento/src/main/resources
+2025-06-29 00:22:52,417 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-estacionamiento/src/main/resources
+2025-06-29 00:22:52,419 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-estacionamiento/src/test/java
+2025-06-29 00:22:52,420 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-estacionamiento/src/test/resources
+2025-06-29 00:22:53,174 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-categoria/src/main/java
+2025-06-29 00:22:53,174 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-categoria/src/main/resources
+2025-06-29 00:22:53,177 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-categoria/src/main/resources
+2025-06-29 00:22:53,179 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-categoria/src/test/java
+2025-06-29 00:22:53,180 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-categoria/src/test/resources
+2025-06-29 00:22:53,487 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-pelicula/src/main/java
+2025-06-29 00:22:53,488 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-pelicula/src/main/resources
+2025-06-29 00:22:53,583 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-pelicula/src/main/resources
+2025-06-29 00:22:53,589 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-pelicula/src/test/java
+2025-06-29 00:22:53,590 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-pelicula/src/test/resources
+2025-06-29 00:22:53,992 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-home/src/main/java
+2025-06-29 00:22:53,993 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-home/src/main/resources
+2025-06-29 00:22:53,998 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-home/src/main/resources
+2025-06-29 00:22:54,002 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-home/src/test/java
+2025-06-29 00:22:54,002 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-home/src/test/resources
+2025-06-29 00:22:54,416 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-sala/src/main/java
+2025-06-29 00:22:54,417 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-sala/src/main/resources
+2025-06-29 00:22:54,423 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-sala/src/main/resources
+2025-06-29 00:22:54,431 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-sala/src/test/java
+2025-06-29 00:22:54,432 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-sala/src/test/resources
+2025-06-29 00:22:54,970 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-usuarios/src/main/java
+2025-06-29 00:22:54,971 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-usuarios/src/main/resources
+2025-06-29 00:22:54,980 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-usuarios/src/main/resources
+2025-06-29 00:22:54,983 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-usuarios/src/test/java
+2025-06-29 00:22:54,985 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-usuarios/src/test/resources
+2025-06-29 00:22:55,560 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-confiteria/src/main/java
+2025-06-29 00:22:55,561 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-confiteria/src/main/resources
+2025-06-29 00:22:55,565 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-confiteria/src/main/resources
+2025-06-29 00:22:55,568 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-confiteria/src/test/java
+2025-06-29 00:22:55,569 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-confiteria/src/test/resources
+2025-06-29 00:22:56,079 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-gateway/src/main/java
+2025-06-29 00:22:56,079 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-gateway/src/main/resources
+2025-06-29 00:22:56,083 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-gateway/src/main/resources
+2025-06-29 00:22:56,086 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-gateway/src/test/java
+2025-06-29 00:22:56,087 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-gateway/src/test/resources
+2025-06-29 00:22:56,595 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-metodopago/src/main/java
+2025-06-29 00:22:56,595 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-metodopago/src/main/resources
+2025-06-29 00:22:56,604 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-metodopago/src/main/resources
+2025-06-29 00:22:56,609 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-metodopago/src/test/java
+2025-06-29 00:22:56,610 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-metodopago/src/test/resources
+2025-06-29 00:22:57,151 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-sede/src/main/java
+2025-06-29 00:22:57,152 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-sede/src/main/resources
+2025-06-29 00:22:57,178 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-sede/src/main/resources
+2025-06-29 00:22:57,222 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-sede/src/test/java
+2025-06-29 00:22:57,223 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-sede/src/test/resources
+2025-06-29 00:22:57,646 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-reclamo/src/main/java
+2025-06-29 00:22:57,647 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-reclamo/src/main/resources
+2025-06-29 00:22:57,652 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-reclamo/src/main/resources
+2025-06-29 00:22:57,655 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-reclamo/src/test/java
+2025-06-29 00:22:57,660 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-reclamo/src/test/resources
+2025-06-29 00:22:58,202 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-funciones/src/main/java
+2025-06-29 00:22:58,202 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-funciones/src/main/resources
+2025-06-29 00:22:58,211 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-funciones/src/main/resources
+2025-06-29 00:22:58,214 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-funciones/src/test/java
+2025-06-29 00:22:58,215 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-funciones/src/test/resources
+2025-06-29 00:22:58,803 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-boletos/src/main/java
+2025-06-29 00:22:58,804 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-boletos/src/main/resources
+2025-06-29 00:22:58,807 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-boletos/src/main/resources
+2025-06-29 00:22:58,811 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-boletos/src/test/java
+2025-06-29 00:22:58,813 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-boletos/src/test/resources
+2025-06-29 00:22:59,246 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 13 project(s) in 17 sec
+2025-06-29 00:23:00,084 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-06-29 00:23:03,360 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.estacionamiento:autocinema-estacionamiento:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-estacionamiento\pom.xml.
+2025-06-29 00:23:03,821 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.funciones:autocinema-funciones:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-funciones\pom.xml.
+2025-06-29 00:23:04,223 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.home:autocinema-home:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-home\pom.xml.
+2025-06-29 00:23:04,351 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.metodopago:autocinema-metodopago:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-metodopago\pom.xml.
+2025-06-29 00:23:04,487 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.pelicula:autocinema-pelicula:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-pelicula\pom.xml.
+2025-06-29 00:23:04,622 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.reclamo:autocinema-reclamo:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-reclamo\pom.xml.
+2025-06-29 00:23:04,754 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.sala:autocinema-sala:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-sala\pom.xml.
+2025-06-29 00:23:04,888 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.usuario:autocinema-usuarios:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-usuarios\pom.xml.
+2025-06-29 00:23:07,202 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-estacionamiento/src/main/java
+2025-06-29 00:23:07,202 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-estacionamiento/src/main/resources
+2025-06-29 00:23:07,203 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-estacionamiento/src/main/resources
+2025-06-29 00:23:07,206 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-estacionamiento/src/test/java
+2025-06-29 00:23:07,207 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-estacionamiento/src/test/resources
+2025-06-29 00:23:07,462 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-funciones/src/main/java
+2025-06-29 00:23:07,462 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-funciones/src/main/resources
+2025-06-29 00:23:07,463 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-funciones/src/main/resources
+2025-06-29 00:23:07,463 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-funciones/src/test/java
+2025-06-29 00:23:07,463 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-funciones/src/test/resources
+2025-06-29 00:23:07,882 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-home/src/main/java
+2025-06-29 00:23:07,883 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-home/src/main/resources
+2025-06-29 00:23:07,883 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-home/src/main/resources
+2025-06-29 00:23:07,883 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-home/src/test/java
+2025-06-29 00:23:07,884 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-home/src/test/resources
+2025-06-29 00:23:08,142 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-metodopago/src/main/java
+2025-06-29 00:23:08,143 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-metodopago/src/main/resources
+2025-06-29 00:23:08,143 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-metodopago/src/main/resources
+2025-06-29 00:23:08,144 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-metodopago/src/test/java
+2025-06-29 00:23:08,145 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-metodopago/src/test/resources
+2025-06-29 00:23:08,433 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-pelicula/src/main/java
+2025-06-29 00:23:08,434 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-pelicula/src/main/resources
+2025-06-29 00:23:08,434 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-pelicula/src/main/resources
+2025-06-29 00:23:08,434 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-pelicula/src/test/java
+2025-06-29 00:23:08,434 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-pelicula/src/test/resources
+2025-06-29 00:23:08,681 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-reclamo/src/main/java
+2025-06-29 00:23:08,681 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-reclamo/src/main/resources
+2025-06-29 00:23:08,682 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-reclamo/src/main/resources
+2025-06-29 00:23:08,682 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-reclamo/src/test/java
+2025-06-29 00:23:08,682 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-reclamo/src/test/resources
+2025-06-29 00:23:08,994 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-sala/src/main/java
+2025-06-29 00:23:08,995 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-sala/src/main/resources
+2025-06-29 00:23:08,995 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-sala/src/main/resources
+2025-06-29 00:23:08,996 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-sala/src/test/java
+2025-06-29 00:23:08,996 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-sala/src/test/resources
+2025-06-29 00:23:09,255 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-usuarios/src/main/java
+2025-06-29 00:23:09,256 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-usuarios/src/main/resources
+2025-06-29 00:23:09,257 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-usuarios/src/main/resources
+2025-06-29 00:23:09,258 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-usuarios/src/test/java
+2025-06-29 00:23:09,259 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-usuarios/src/test/resources
+2025-06-29 00:23:10,071 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 8 poms: local refresh takes 0.00 sec, refresh facades takes 6.00 sec, update config takes 2.00 sec 
+2025-06-29 00:23:10,076 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-06-29 00:23:11,688 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.boletos:autocinema-boletos:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-boletos\pom.xml.
+2025-06-29 00:23:12,175 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.categoria:autocinema-categoria:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-categoria\pom.xml.
+2025-06-29 00:23:12,358 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.confiteria:autocinema-confiteria:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-confiteria\pom.xml.
+2025-06-29 00:23:12,494 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.autocinema.gateway:autocinema-gateway:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-gateway\pom.xml.
+2025-06-29 00:23:12,808 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.sede:autocinema-sede:0.0.1-SNAPSHOT @ D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-sede\pom.xml.
+2025-06-29 00:23:13,881 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-boletos/src/main/java
+2025-06-29 00:23:13,882 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-boletos/src/main/resources
+2025-06-29 00:23:13,882 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-boletos/src/main/resources
+2025-06-29 00:23:13,882 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-boletos/src/test/java
+2025-06-29 00:23:13,883 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-boletos/src/test/resources
+2025-06-29 00:23:14,117 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-categoria/src/main/java
+2025-06-29 00:23:14,117 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-categoria/src/main/resources
+2025-06-29 00:23:14,117 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-categoria/src/main/resources
+2025-06-29 00:23:14,118 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-categoria/src/test/java
+2025-06-29 00:23:14,118 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-categoria/src/test/resources
+2025-06-29 00:23:14,353 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-confiteria/src/main/java
+2025-06-29 00:23:14,354 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-confiteria/src/main/resources
+2025-06-29 00:23:14,354 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-confiteria/src/main/resources
+2025-06-29 00:23:14,354 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-confiteria/src/test/java
+2025-06-29 00:23:14,355 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-confiteria/src/test/resources
+2025-06-29 00:23:14,615 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-gateway/src/main/java
+2025-06-29 00:23:14,616 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-gateway/src/main/resources
+2025-06-29 00:23:14,617 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-gateway/src/main/resources
+2025-06-29 00:23:14,617 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-gateway/src/test/java
+2025-06-29 00:23:14,618 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-gateway/src/test/resources
+2025-06-29 00:23:14,999 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-sede/src/main/java
+2025-06-29 00:23:14,999 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-sede/src/main/resources
+2025-06-29 00:23:15,001 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-sede/src/main/resources
+2025-06-29 00:23:15,001 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /autocinema-sede/src/test/java
+2025-06-29 00:23:15,002 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /autocinema-sede/src/test/resources
+2025-06-29 00:23:15,484 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 5 poms: local refresh takes 0.00 sec, refresh facades takes 3.00 sec, update config takes 1.00 sec 
+2025-06-29 00:23:16,222 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-06-29 00:23:16,241 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src\main\resources to target\classes
+2025-06-29 00:23:16,256 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-boletos\src\test\resources
+2025-06-29 00:23:16,672 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-06-29 00:23:16,684 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src\main\resources to target\classes
+2025-06-29 00:23:16,692 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-categoria\src\test\resources
+2025-06-29 00:23:16,904 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-06-29 00:23:16,918 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src\main\resources to target\classes
+2025-06-29 00:23:16,931 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-confiteria\src\test\resources
+2025-06-29 00:23:17,143 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-06-29 00:23:17,157 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src\main\resources to target\classes
+2025-06-29 00:23:17,171 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-estacionamiento\src\test\resources
+2025-06-29 00:23:17,374 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-06-29 00:23:17,385 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src\main\resources to target\classes
+2025-06-29 00:23:17,400 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-funciones\src\test\resources
+2025-06-29 00:23:17,739 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-06-29 00:23:17,757 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-06-29 00:23:17,760 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-gateway\src\test\resources
+2025-06-29 00:23:17,938 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-06-29 00:23:17,953 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src\main\resources to target\classes
+2025-06-29 00:23:17,965 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-home\src\test\resources
+2025-06-29 00:23:18,169 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-06-29 00:23:18,181 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src\main\resources to target\classes
+2025-06-29 00:23:18,196 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-metodopago\src\test\resources
+2025-06-29 00:23:18,389 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-06-29 00:23:18,398 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2025-06-29 00:23:18,407 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-pelicula\src\test\resources
+2025-06-29 00:23:18,589 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-06-29 00:23:18,601 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src\main\resources to target\classes
+2025-06-29 00:23:18,613 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-reclamo\src\test\resources
+2025-06-29 00:23:18,783 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-06-29 00:23:18,792 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src\main\resources to target\classes
+2025-06-29 00:23:18,801 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-sala\src\test\resources
+2025-06-29 00:23:18,952 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-06-29 00:23:18,964 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-06-29 00:23:18,967 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-sede\src\test\resources
+2025-06-29 00:23:19,120 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-06-29 00:23:19,130 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src\main\resources to target\classes
+2025-06-29 00:23:19,140 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\CERTUS\CICLO V\workspace-spring-tool-4-Soluciones MAR-1791\autocinema-usuarios\src\test\resources
