@@ -1,0 +1,5 @@
+package com.reclamo.repository;
+
+public interface ReclamoRepository {
+
+}

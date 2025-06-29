@@ -1,0 +1,5 @@
+package com.funciones.repository;
+
+public interface FuncionesRepository {
+
+}

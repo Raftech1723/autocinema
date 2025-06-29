@@ -1,0 +1,5 @@
+package com.estacionamiento.service;
+
+public class EstacionamientoServiceImpl {
+
+}

@@ -1,0 +1,5 @@
+package com.boletos.repository;
+
+public interface BoletosRepository {
+
+}

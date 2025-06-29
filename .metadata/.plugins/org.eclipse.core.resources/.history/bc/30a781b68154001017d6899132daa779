@@ -1,0 +1,5 @@
+package com.funciones.cliente;
+
+public interface PeliculaCliente {
+
+}

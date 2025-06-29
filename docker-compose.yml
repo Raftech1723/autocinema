@@ -1,0 +1,189 @@
+version: '3.8'
+
+services:
+  mysql-container:
+    image: mysql:8.0
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: autocinemadb
+    ports:
+      - "3307:3306"
+    networks:
+      - autocinema-net
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  autocinema-home:
+    build: ./autocinema-home
+    container_name: autocinema-home
+    depends_on:
+      - mysql-container
+    ports:
+      - "8001:8001"
+    networks:
+      - autocinema-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  autocinema-usuarios:
+    build: ./autocinema-usuarios
+    container_name: autocinema-usuarios
+    depends_on:
+      - mysql-container
+    ports:
+      - "8002:8002"
+    networks:
+      - autocinema-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  autocinema-pelicula:
+    build: ./autocinema-pelicula
+    container_name: autocinema-pelicula
+    depends_on:
+      - mysql-container
+    ports:
+      - "8003:8003"
+    networks:
+      - autocinema-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  autocinema-sede:
+    build: ./autocinema-sede
+    container_name: autocinema-sede
+    depends_on:
+      - mysql-container
+    ports:
+      - "8004:8004"
+    networks:
+      - autocinema-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  autocinema-sala:
+    build: ./autocinema-sala
+    container_name: autocinema-sala
+    depends_on:
+      - mysql-container
+    ports:
+      - "8005:8005"
+    networks:
+      - autocinema-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  autocinema-reclamo:
+    build: ./autocinema-reclamo
+    container_name: autocinema-reclamo
+    depends_on:
+      - mysql-container
+    ports:
+      - "8006:8006"
+    networks:
+      - autocinema-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  autocinema-metodopago:
+    build: ./autocinema-metodopago
+    container_name: autocinema-metodopago
+    depends_on:
+      - mysql-container
+    ports:
+      - "8007:8007"
+    networks:
+      - autocinema-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  autocinema-funciones:
+    build: ./autocinema-funciones
+    container_name: autocinema-funciones
+    depends_on:
+      - mysql-container
+    ports:
+      - "8008:8008"
+    networks:
+      - autocinema-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  autocinema-estacionamiento:
+    build: ./autocinema-estacionamiento
+    container_name: autocinema-estacionamiento
+    depends_on:
+      - mysql-container
+    ports:
+      - "8009:8009"
+    networks:
+      - autocinema-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  autocinema-confiteria:
+    build: ./autocinema-confiteria
+    container_name: autocinema-confiteria
+    depends_on:
+      - mysql-container
+    ports:
+      - "8010:8010"
+    networks:
+      - autocinema-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  autocinema-categoria:
+    build: ./autocinema-categoria
+    container_name: autocinema-categoria
+    depends_on:
+      - mysql-container
+    ports:
+      - "8011:8011"
+    networks:
+      - autocinema-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  autocinema-boletos:
+    build: ./autocinema-boletos
+    container_name: autocinema-boletos
+    depends_on:
+      - mysql-container
+    ports:
+      - "8012:8012"
+    networks:
+      - autocinema-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  autocinema-gateway:
+    build: ./autocinema-gateway
+    container_name: autocinema-gateway
+    depends_on:
+      - autocinema-home
+      - autocinema-usuarios
+      - autocinema-pelicula
+      - autocinema-sede
+      - autocinema-sala
+      - autocinema-reclamo
+      - autocinema-metodopago
+      - autocinema-funciones
+      - autocinema-estacionamiento
+      - autocinema-confiteria
+      - autocinema-categoria
+      - autocinema-boletos
+    ports:
+      - "9090:9090"
+    networks:
+      - autocinema-net
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+networks:
+  autocinema-net:
+    driver: bridge
+
+volumes:
+  mysql_data:

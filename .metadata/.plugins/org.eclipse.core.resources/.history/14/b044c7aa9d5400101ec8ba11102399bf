@@ -1,0 +1,5 @@
+package com.pelicula.entity;
+
+public class Pelicula {
+
+}

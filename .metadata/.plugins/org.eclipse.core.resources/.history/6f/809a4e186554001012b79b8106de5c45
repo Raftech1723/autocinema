@@ -1,0 +1,5 @@
+package com.confiteria.repository;
+
+public interface ConfiteriaRepository {
+
+}

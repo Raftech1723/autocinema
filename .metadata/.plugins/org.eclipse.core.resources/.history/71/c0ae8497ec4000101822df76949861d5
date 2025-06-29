@@ -1,0 +1,33 @@
+package net.itinajero;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class JpaDemoApplication implements CommandLineRunner  {
+
+	public static void main(String[] args) {
+		SpringApplication.run(JpaDemoApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println("Ejemplos de Sprint Data JPA");
+		guardar();
+	}
+
+		
+	private void guardar() {
+		System.out.println("Metodo Insertar un Registro");
+	}
+	
+	private void eliminar() {
+		System.out.println("Metodo Eliminar un Registro");
+	}
+	
+	private void actualizar() {
+		System.out.println("Metodo Actualizar un Registro");
+	}
+
+}

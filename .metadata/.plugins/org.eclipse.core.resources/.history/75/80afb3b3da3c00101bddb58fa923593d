@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Funciones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+      <link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+	<header th:insert="fragments/header :: menu-principal">
+      
+    </header>
+    
+<div class="container">
+    <h2 class="text-center mb-4">Gestión de Funciones</h2>
+
+  <!-- Formulario Guardar -->
+    <div class="card mb-4 shadow">
+        <div class="card-body">
+   <form th:action="@{/funciones/guardar}" th:object="${funciones}" method="post" class="card p-4 mb-4">
+        <input type="hidden" th:field="*{id}" />
+        
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label class="form-label">Fecha</label>
+                <input type="date" class="form-control" th:field="*{fecha}" required>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Hora</label>
+                <input type="time" class="form-control" th:field="*{hora}" required>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Película</label>
+                <select class="form-select" th:field="*{pelicula_id}" required>
+                    <option value="">Selecciona una película</option>
+                    <option th:each="pelicula : ${listaPelicula}" 
+                            th:value="${pelicula.id}" 
+                            th:text="${pelicula.titulo}">Película</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label class="form-label">Sala</label>
+                <select class="form-select" th:field="*{sala_id}" required>
+                    <option value="">Selecciona una sala</option>
+                    <option th:each="sala : ${listaSala}" 
+                            th:value="${sala.id}" 
+                            th:text="${sala.nombre}">Sala</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar Función</button>
+    </form>
+      </div>
+    </div>
+    <!-- Formulario de Búsqueda -->
+    <form class="row g-3 justify-content-center mb-4" th:action="@{/funciones/buscar}" method="get">
+        <div class="col-auto">
+            <input type="number" class="form-control" name="id" placeholder="Ingrese ID de la funcion">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-success">
+                <i class="bi bi-search"></i> Buscar por ID
+            </button>
+        </div>
+        <div class="col-auto">
+            <a th:href="@{/funciones/buscar}" class="btn btn-primary">
+                <i class="bi bi-list-ul"></i> Mostrar Todos
+            </a>
+        </div>
+    </form>
+
+    <!-- Tabla de funciones -->
+    <div class="table-responsive" th:if="${listaFunciones != null}">
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Película</th>
+                <th>Sala</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="f : ${listaFunciones}">
+                <td th:text="${f.id}"></td>
+                <td th:text="${f.fecha}"></td>
+                <td th:text="${f.hora}"></td>
+                <td th:text="${f.pelicula_id}"></td>
+                <td th:text="${f.sala_id}"></td>
+                <td>
+                    <a th:href="@{'/funciones/editar/' + ${f.id}}" class="btn btn-warning btn-sm">✏️ Editar</a>
+                    <a th:href="@{'/funciones/eliminar/' + ${f.id}}" class="btn btn-danger btn-sm"
+                       onclick="return confirm('¿Estás seguro de eliminar esta función?');">🗑️ Eliminar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+     </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

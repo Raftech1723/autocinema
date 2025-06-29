@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Gestión de Reclamos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+   <link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+	<header th:insert="fragments/header :: menu-principal">
+      
+    </header>
+    
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Gestión de Reclamos</h1>
+
+    <!-- Formulario de Reclamo -->
+    <div class="card mb-4 shadow">
+        <div class="card-body">
+            <form th:action="@{/reclamos/guardar}" method="post" th:object="${reclamo}">
+                <input type="hidden" th:field="*{id}"/>
+                <div class="mb-3">
+                    <label class="form-label">Usuario_id</label>
+                    <input type="text" th:field="*{usuario_id}" class="form-control" placeholder="Ingrese la ID del usuario" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Sede_id</label>
+                    <input type="text" th:field="*{sede_id}" class="form-control" placeholder="Ingrese la ID de la sede" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Confiteria_id</label>
+                    <input type="text" th:field="*{confiteria_id}" class="form-control" placeholder="Ingrese la ID de confiteria" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Descripcion</label>
+                    <input type="text" th:field="*{descripcion}" class="form-control" placeholder="Ingrese la descripción">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Estado</label>
+                    <input type="text" th:field="*{estado}" class="form-control" placeholder="Ingrese el estado">
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar Reclamo</button>
+            </form>
+        </div>
+    </div>
+    
+     <!-- Formulario de Búsqueda -->
+		<form class="row g-3 justify-content-center mb-4"
+			th:action="@{/reclamos/buscar}" method="get">
+			<div class="col-auto">
+				<input type="number" class="form-control" name="id"
+					placeholder="Ingrese ID de Usuarios">
+			</div>
+			<div class="col-auto">
+				<button type="submit" class="btn btn-success">
+					<i class="bi bi-search"></i> Buscar por ID
+				</button>
+			</div>
+			<div class="col-auto">
+				<a th:href="@{/reclamos/buscar}" class="btn btn-primary"> <i
+					class="bi bi-list-ul"></i> Mostrar Todos
+				</a>
+			</div>
+		</form>
+		
+		<!-- Tabla de Reclamos -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>ID Usuario</th>
+                    <th>ID Sede</th>
+                    <th>ID Confiteria</th>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="r : ${listaReclamo}">
+                    <td th:text="${r.id}">1</td>
+                    <td th:text="${r.usuario_id}">Juan</td>
+                    <td th:text="${r.sede_id}">4</td>
+                    <td th:text="${r.confiteria_id}">2</td>
+                    <td th:text="${r.descripcion}">Los asientos esta un poco sucios</td>
+                    <td th:text="${r.estado}">bueno</td>
+                    
+                    <td>
+                        <a th:href="@{'/reclamos/editar/' + ${r.id}}" class="btn btn-warning btn-sm">
+                            ✏️ Editar
+                        </a>
+                        <a th:href="@{'/reclamos/eliminar/' + ${r.id}}" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de eliminar este reclamo?')">
+                            🗑️ Eliminar
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Bootstrap JS opcional -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

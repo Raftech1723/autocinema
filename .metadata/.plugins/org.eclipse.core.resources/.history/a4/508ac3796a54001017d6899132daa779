@@ -1,0 +1,5 @@
+package com.estacionamiento.entity;
+
+public class Estacionamiento {
+
+}

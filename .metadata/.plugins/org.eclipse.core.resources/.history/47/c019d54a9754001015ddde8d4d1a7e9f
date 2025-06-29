@@ -1,0 +1,5 @@
+package com.metodopago.repository;
+
+public interface MetodoPagoRepository {
+
+}

@@ -1,0 +1,4 @@
+spring.application.name=autocinema-home
+
+server.port=8001
+

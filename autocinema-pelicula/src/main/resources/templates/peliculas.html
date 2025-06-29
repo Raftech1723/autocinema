@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Películas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+
+<header th:insert="fragments/header :: menu-principal">
+      
+    </header>
+
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Gestión de Películas</h1>
+
+  
+  <!-- Selección de género -->
+   <div class="row row-cols-2 row-cols-md-5 g-3 mb-4">
+    <a class="col text-center text-decoration-none text-white" th:href="@{/peliculas/genero/1}">
+      <img src="/imagen/accion/rapidos.jpg" class="img-thumb rounded shadow">
+      <p class="mt-2">Acción</p>
+    </a>
+    <a class="col text-center text-decoration-none text-white" th:href="@{/peliculas/genero/2}">
+      <img src="/imagen/animes/onepiece.jpg" class="img-thumb rounded shadow">
+      <p class="mt-2">Anime</p>
+    </a>
+    <a class="col text-center text-decoration-none text-white" th:href="@{/peliculas/genero/3}">
+      <img src="/imagen/aventura/willow.jpg" class="img-thumb rounded shadow">
+      <p class="mt-2">Aventura</p>
+    </a>
+    <a class="col text-center text-decoration-none text-white" th:href="@{/peliculas/genero/4}">
+      <img src="/imagen/catastrofe/sanandres.jpg" class="img-thumb rounded shadow">
+      <p class="mt-2">Catástrofe</p>
+    </a>
+    <a class="col text-center text-decoration-none text-white" th:href="@{/peliculas/genero/5}">
+      <img src="/imagen/ciencia_ficcion/avengers.jpg" class="img-thumb rounded shadow">
+      <p class="mt-2">Ciencia Ficción</p>
+    </a>
+    <a class="col text-center text-decoration-none text-white" th:href="@{/peliculas/genero/6}">
+      <img src="/imagen/comedia/ayer.jpg" class="img-thumb rounded shadow">
+      <p class="mt-2">Comedia</p>
+    </a>
+    <a class="col text-center text-decoration-none text-white" th:href="@{/peliculas/genero/7}">
+      <img src="/imagen/documental/almudena.jpg" class="img-thumb rounded shadow">
+      <p class="mt-2">Documental</p>
+    </a>
+    <a class="col text-center text-decoration-none text-white" th:href="@{/peliculas/genero/8}">
+      <img src="/imagen/drama/niño.jpg" class="img-thumb rounded shadow">
+      <p class="mt-2">Drama</p>
+    </a>
+    <a class="col text-center text-decoration-none text-white" th:href="@{/peliculas/genero/9}">
+      <img src="/imagen/fantasia/anillos.jpg" class="img-thumb rounded shadow">
+      <p class="mt-2">Fantasía</p>
+    </a>
+    <a class="col text-center text-decoration-none text-white" th:href="@{/peliculas/genero/10}">
+      <img src="/imagen/musicales/acomplete.jpg" class="img-thumb rounded shadow">
+      <p class="mt-2">Musicales</p>
+    </a>
+    <a class="col text-center text-decoration-none text-white" th:href="@{/peliculas/genero/11}">
+      <img src="/imagen/romance/efimera.jpg" class="img-thumb rounded shadow">
+      <p class="mt-2">Romance</p>
+    </a>
+    <a class="col text-center text-decoration-none text-white" th:href="@{/peliculas/genero/12}">
+      <img src="/imagen/suspenso/losojos.jpg" class="img-thumb rounded shadow">
+      <p class="mt-2">Suspenso</p>
+    </a>
+    <a class="col text-center text-decoration-none text-white" th:href="@{/peliculas/genero/13}">
+      <img src="/imagen/terror/nosferatu.jpg" class="img-thumb rounded shadow">
+      <p class="mt-2">Terror</p>
+    </a>
+    
+  </div>  
+  
+  
+  
+  <!-- Formulario de Búsqueda -->
+		<form class="row g-3 justify-content-center mb-4"
+			th:action="@{/peliculas/buscar}" method="get">
+			<div class="col-auto">
+				<input type="number" class="form-control" name="id"
+					placeholder="Ingrese ID de Usuarios">
+			</div>
+			<div class="col-auto">
+				<button type="submit" class="btn btn-success">
+					<i class="bi bi-search"></i> Buscar por ID
+				</button>
+			</div>
+			<div class="col-auto">
+				<a th:href="@{/peliculas/buscar}" class="btn btn-primary"> <i
+					class="bi bi-list-ul"></i> Mostrar Todos
+				</a>
+			</div>
+		</form>
+
+<div class="container mt-5">
+ <!-- <h1 class="text-center mb-4">Gestión de Películas</h1> -->
+
+  <!-- Alerta de éxito -->
+<div id="alerta-guardado" class="alert alert-success position-fixed top-0 end-0 m-3 shadow d-none fade show" role="alert" style="z-index: 1050; transition: all 0.5s ease-in-out; transform: translateX(100%);">
+  <strong>🎉 ¡Éxito!</strong> Película guardada correctamente.
+</div>
+
+
+
+<!-- Lista de películas por género -->
+<div id="peliculas-genero" class="row row-cols-2 row-cols-md-4 g-3 mb-4" th:if="${listaPeliculasPorGenero != null}">
+  <p th:if="${#lists.isEmpty(listaPeliculasPorGenero)}" class="text-warning">⚠️ No hay películas en este género.</p>
+  <div class="col" th:each="p : ${listaPeliculasPorGenero}">
+    <img th:src="@{'/imagen/' + ${p.imagen}}"
+         th:alt="${p.titulo}" class="img-thumb rounded shadow"
+         th:attr="data-id=${p.id}, data-titulo=${p.titulo}, data-descripcion=${p.descripcion}, data-duracion=${p.duracion}, data-categoria=${p.categoriaId}, data-imagen=${p.imagen}"
+         onclick="mostrarFormulario() || seleccionarPeliculaDesdeData(this)">
+    <p class="text-center mt-2" th:text="${p.titulo}"></p>
+  </div>
+</div>
+
+<!-- Formulario de Película (inicialmente oculto) -->
+<div id="formulario-pelicula" class="card mb-4 shadow d-none">
+  <div class="card-body">
+    <form th:action="@{/peliculas/guardar}" method="post" th:object="${pelicula}">
+      <input type="hidden" th:field="*{id}" id="id" />
+      <input type="hidden" th:field="*{imagen}" id="imagen" />
+      <div class="mb-3">
+        <label class="form-label">Título</label>
+        <input type="text" id="titulo" th:field="*{titulo}" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Descripción</label>
+        <textarea id="descripcion" th:field="*{descripcion}" class="form-control" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Duración (minutos)</label>
+        <input type="number" id="duracion" th:field="*{duracion}" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">ID de Categoría</label>
+        <input type="number" id="categoria_id" th:field="*{categoriaId}" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Guardar Película 💾</button>
+    </form>
+  </div>
+</div>
+
+<!-- Tabla de Películas -->
+<div class="table-responsive" th:if="${listaPeliculas != null}">
+  <table class="table table-bordered table-hover align-middle">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Imagen</th>
+        <th>Título</th>
+        <th>Descripción</th>
+        <th>Duración</th>
+        <th>ID Categoría</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="p : ${listaPeliculas}">
+        <td th:text="${p.id}">1</td>
+        <td>
+          <img th:src="@{'/imagen/' + ${p.imagen}}" th:alt="${p.titulo}" class="img-thumb rounded shadow">
+        </td>
+        <td th:text="${p.titulo}">Título</td>
+        <td th:text="${p.descripcion}">Descripción</td>
+        <td th:text="${p.duracion}">120</td>
+        <td th:text="${p.categoriaId}">2</td>
+        <td>
+          <a th:href="@{'/peliculas/editar/' + ${p.id}}" class="btn btn-warning btn-sm">✏️ Editar</a>
+          <a th:href="@{'/peliculas/eliminar/' + ${p.id}}" class="btn btn-danger btn-sm" onclick="return confirm('¿Eliminar esta película?')">🗑️ Eliminar</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer th:insert="fragments/footer :: pie-pagina" class="footer">
+      
+</footer>
+    
+<!-- Scripts -->
+<script>
+  function seleccionarPeliculaDesdeData(el) {
+    document.getElementById('titulo').value = el.dataset.titulo;
+    document.getElementById('descripcion').value = el.dataset.descripcion;
+    document.getElementById('duracion').value = el.dataset.duracion;
+    document.getElementById('categoria_id').value = el.dataset.categoria;
+    document.getElementById('imagen').value = el.dataset.imagen;
+    if (el.dataset.id) {
+      document.getElementById('id').value = el.dataset.id;
+    }
+  }
+
+  function mostrarFormulario() {
+    const form = document.getElementById('formulario-pelicula');
+    form.classList.remove('d-none');
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const alerta = document.getElementById('alerta-guardado');
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('guardado') === 'true') {
+      alerta.classList.remove('d-none');
+      alerta.style.transform = 'translateX(0%)';
+      setTimeout(() => {
+        alerta.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+          alerta.classList.add('d-none');
+          document.getElementById('titulo').value = '';
+          document.getElementById('descripcion').value = '';
+          document.getElementById('duracion').value = '';
+          document.getElementById('categoria_id').value = '';
+          document.getElementById('imagen').value = '';
+          document.getElementById('id').value = '';
+          document.getElementById('titulo').focus();
+        }, 500);
+      }, 3000);
+    }
+  });
+</script>
+</body>
+</html>

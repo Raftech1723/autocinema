@@ -1,0 +1,5 @@
+package com.metodopago.entity;
+
+public class MetodoPago {
+
+}
