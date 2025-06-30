@@ -18,7 +18,7 @@ import com.boletos.entity.Boletos;
 import com.boletos.repository.BoletosRepository;
 import com.boletos.service.BoletosService;
 
-@Controller
+@Controller            //PRUEVA
 @RequestMapping("/boletos")
 public class BoletosController {
 	
