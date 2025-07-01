@@ -57,6 +57,11 @@
         	<groupId>org.springframework.boot</groupId>
         	<artifactId>spring-boot-starter-thymeleaf</artifactId>
     	</dependency>
+    	<dependency>
+    		<groupId>com.categoria</groupId>
+    		<artifactId>autocinema-categoria</artifactId>
+    		<version>0.0.1-SNAPSHOT</version>
+    	</dependency>
     </dependencies>
     
      <!-- BOM de Spring Cloud para manejar versiones compatibles -->

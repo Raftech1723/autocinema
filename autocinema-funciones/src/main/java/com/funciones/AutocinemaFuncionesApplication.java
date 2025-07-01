@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableFeignClients(basePackages = "com.funciones.client")
+@EnableFeignClients(basePackages = "com.funciones.cliente")
 public class AutocinemaFuncionesApplication {
 
 	public static void main(String[] args) {

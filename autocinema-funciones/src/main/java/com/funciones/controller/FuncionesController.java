@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.funciones.entity.Funciones;
 import com.funciones.repository.FuncionesRepository;
 import com.funciones.service.FuncionesService;
+import com.funciones.service.PeliculaService;
+import com.funciones.service.SalaService;
 
 @Controller
 @RequestMapping("/funciones")
@@ -36,7 +38,10 @@ public class FuncionesController {
     
     @GetMapping
     public String mostrarFormulario(Model model) {
-        model.addAttribute("funciones", new Funciones());
+    	model.addAttribute("funciones", new Funciones());
+        model.addAttribute("listaFunciones", funcionesService.listarFunciones()); // Esto también para mostrar la tabla
+        model.addAttribute("listaPelicula", peliculaService.listarPelicula());
+        model.addAttribute("listaSala", salaService.listarSala());
         return "funciones";
     }
     

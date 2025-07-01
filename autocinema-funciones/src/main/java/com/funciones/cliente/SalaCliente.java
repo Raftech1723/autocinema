@@ -1,13 +1,13 @@
 package com.funciones.cliente;
 
+import com.funciones.dto.SalaDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import java.util.List;
 
-@FeignClient(name = "autocinema-sala", path = "/sala")
+@FeignClient(name = "autocinema-sala", url = "http://localhost:8005") // O el puerto correcto
 public interface SalaCliente {
-	
-	@GetMapping("/{id}")
-    SalaDTO obtenerSalaPorId(@PathVariable("id") Long id);
 
+    @GetMapping("/sala") // Asegúrate que este endpoint devuelva todas las salas
+    List<SalaDTO> listarSalas();
 }
