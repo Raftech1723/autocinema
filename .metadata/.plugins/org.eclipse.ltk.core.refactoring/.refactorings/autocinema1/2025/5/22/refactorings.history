@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;autocinema1/src/main/resources/templates/fragments/cabecera.html&apos; to &apos;header.html&apos;" description="Rename resource &apos;cabecera.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/fragments/cabecera.html" name="header.html" stamp="1748550781719" updateReferences="true"/>
-</session>
