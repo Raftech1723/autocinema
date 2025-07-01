@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.categoria.service.CategoriaService;
 import com.pelicula.entity.Pelicula;
 import com.pelicula.repository.PeliculaRepository;
 import com.pelicula.service.PeliculaService;
