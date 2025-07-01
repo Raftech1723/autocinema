@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.categoria.service.CategoriaService;
+import com.pelicula.cliente.CategoriaCliente;
 import com.pelicula.entity.Pelicula;
 import com.pelicula.repository.PeliculaRepository;
 import com.pelicula.service.PeliculaService;
@@ -28,7 +29,8 @@ public class PeliculaController {
     private PeliculaService peliculaService;
 	
 	@Autowired
-    private CategoriaService categoriaService;
+	private CategoriaCliente categoriaCliente;
+
 	
 	@Autowired
     private PeliculaRepository peliculaRepository;
@@ -38,7 +40,7 @@ public class PeliculaController {
         List<Pelicula> lista = peliculaService.listarPelicula();
         model.addAttribute("listaPeliculas", lista);
         model.addAttribute("pelicula", new Pelicula());
-        model.addAttribute("categorias", categoriaService.listarCategorias());
+        model.addAttribute("categorias", categoriaCliente.listarCategorias());
         return "peliculas";
     }
 
@@ -48,7 +50,7 @@ public class PeliculaController {
         List<Pelicula> peliculasPorGenero = peliculaService.buscarPorCategoria(id);
         model.addAttribute("listaPeliculas", peliculaService.listarPelicula()); // para la tabla
         model.addAttribute("listaPeliculasPorGenero", peliculasPorGenero);      // para el cuadro de películas del género
-        model.addAttribute("categorias", categoriaService.listarCategorias());  // para el panel de géneros
+        model.addAttribute("categorias", categoriaCliente.listarCategorias());  // para el panel de géneros
         model.addAttribute("pelicula", new Pelicula());                         // para el formulario
         return "peliculas";
     }
@@ -66,7 +68,7 @@ public class PeliculaController {
 
         model.addAttribute("pelicula", new Pelicula());
         model.addAttribute("listaPeliculas", pelicula);
-        model.addAttribute("categorias", categoriaService.listarCategorias());
+        model.addAttribute("categorias", categoriaCliente.listarCategorias());
         
         return "peliculas";
     }
@@ -82,7 +84,7 @@ public class PeliculaController {
         Pelicula pelicula = peliculaService.getIdPelicula(id);
         model.addAttribute("pelicula", pelicula);
         model.addAttribute("listaPeliculas", peliculaService.listarPelicula());
-        model.addAttribute("categorias", categoriaService.listarCategorias());
+        model.addAttribute("categorias", categoriaCliente.listarCategorias());
         return "peliculas";
     }
 
