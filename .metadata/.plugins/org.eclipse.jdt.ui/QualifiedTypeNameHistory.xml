@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="net.itinajeros.model.Vacante"/>
-    <fullyQualifiedTypeName name="java.text.ParseException"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.WebDataBinder"/>
-    <fullyQualifiedTypeName name="net.itinajero.model.Categoria"/>
-</qualifiedTypeNameHistroy>

@@ -1,0 +1,119 @@
+spring:
+  application:
+    name: autocinema-gateway
+
+  cloud:
+    gateway:
+      routes:
+        - id: home
+          uri: http://localhost:8001
+          predicates:
+            - Path=/home/**
+            - Path=/css/**
+            - Path=/imagen/**
+          filters:
+            - StripPrefix=1
+
+        - id: usuarios
+          uri: http://localhost:8002
+          predicates:
+            - Path=/usuarios/**
+            - Path=/usuarios/css/**
+            - Path=/usuarios/imagen/**
+          filters:
+            - StripPrefix=1
+
+        - id: pelicula
+          uri: http://localhost:8003
+          predicates:
+            - Path=/peliculas/**
+            - Path=/peliculas/css/**
+            - Path=/peliculas/imagen/**
+          filters:
+            - StripPrefix=1
+
+        - id: sede
+          uri: http://localhost:8004
+          predicates:
+            - Path=/sedes/**
+            - Path=/sedes/css/**
+            - Path=/sedes/imagen/**
+          filters:
+            - StripPrefix=1
+
+        - id: sala
+          uri: http://localhost:8005
+          predicates:
+            - Path=/salas/**
+            - Path=/salas/css/**
+            - Path=/salas/imagen/**
+          filters:
+            - StripPrefix=1
+
+        - id: reclamo
+          uri: http://localhost:8006
+          predicates:
+            - Path=/reclamos/**
+            - Path=/reclamos/css/**
+            - Path=/reclamos/imagen/**
+          filters:
+            - StripPrefix=1
+
+        - id: metodopago
+          uri: http://localhost:8007
+          predicates:
+            - Path=/metodos_pago/**
+            - Path=/metodos_pago/css/**
+            - Path=/metodos_pago/imagen/**
+          filters:
+            - StripPrefix=1
+
+        - id: funciones
+          uri: http://localhost:8008
+          predicates:
+            - Path=/funciones/**
+            - Path=/funciones/css/**
+            - Path=/funciones/imagen/**
+          filters:
+            - StripPrefix=1
+
+        - id: estacionamiento
+          uri: http://localhost:8009
+          predicates:
+            - Path=/estacionamientos/**
+            - Path=/estacionamientos/css/**
+            - Path=/estacionamientos/imagen/**
+          filters:
+            - StripPrefix=1
+
+        - id: confiteria
+          uri: http://localhost:8010
+          predicates:
+            - Path=/confiterias/**
+            - Path=/confiterias/css/**
+            - Path=/confiterias/imagen/**
+          filters:
+            - StripPrefix=1
+
+        - id: categoria
+          uri: http://localhost:8011
+          predicates:
+            - Path=/categorias/**
+            - Path=/categorias/css/**
+            - Path=/categorias/imagen/**
+          filters:
+            - StripPrefix=1
+
+        - id: boletos
+          uri: http://localhost:8012
+          predicates:
+            - Path=/boletos/**
+            - Path=/boletos/css/**
+            - Path=/boletos/imagen/**
+          filters:
+            - StripPrefix=1
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

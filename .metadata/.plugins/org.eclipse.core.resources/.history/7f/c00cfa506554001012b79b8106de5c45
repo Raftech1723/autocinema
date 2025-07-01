@@ -1,5 +1,0 @@
-package com.confiteria.service;
-
-public interface ConfiteriaService {
-
-}

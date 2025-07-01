@@ -1,5 +1,0 @@
-package com.sala.repository;
-
-public interface SalaRepository {
-
-}

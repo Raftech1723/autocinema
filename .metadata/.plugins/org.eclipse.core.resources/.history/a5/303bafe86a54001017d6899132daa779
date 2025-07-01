@@ -1,5 +1,0 @@
-package com.estacionamiento.service;
-
-public interface EstacionamientoService {
-
-}

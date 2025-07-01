@@ -1,0 +1,78 @@
+<nav th:fragment="menu-principal" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg p-3 rounded mb-4">
+ <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="/imagen/icon.jpg" alt="Logo" style="width: 35px; height: 35px; margin-right: 10px;">
+            <span class="fs-4 fw-bold">AutocineNova</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-2">
+                <li class="nav-item">
+                    <a class="btn btn-outline-light d-flex align-items-center gap-1" th:href="@{'http://localhost:9090/home'}">
+                        <i class="bi bi-house"></i> Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light d-flex align-items-center gap-1" th:href="@{'http://localhost:9090/usuarios'}">
+                        <i class="bi bi-people"></i> Usuarios
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light d-flex align-items-center gap-1" th:href="@{'http://localhost:9090/categorias'}">
+                        <i class="bi bi-tags"></i> Categorías
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light d-flex align-items-center gap-1" th:href="@{'http://localhost:9090/estacionamientos'}">
+                        <i class="bi bi-car-front"></i> Estacionamientos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light d-flex align-items-center gap-1" th:href="@{'http://localhost:9090/sedes'}">
+                        <i class="bi bi-building"></i> Sedes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light d-flex align-items-center gap-1" th:href="@{'http://localhost:9090/funciones'}">
+                        <i class="bi bi-calendar-event"></i> Funciones
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light d-flex align-items-center gap-1" th:href="@{'http://localhost:9090/peliculas'}">
+                        <i class="bi bi-film"></i> Películas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light d-flex align-items-center gap-1" th:href="@{'http://localhost:9090/salas'}">
+                        <i class="bi bi-door-closed"></i> Salas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light d-flex align-items-center gap-1" th:href="@{'http://localhost:9090/confiterias'}">
+                        <i class="bi bi-cup-straw"></i> Confitería
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light d-flex align-items-center gap-1" th:href="@{'http://localhost:9090/metodos_pago'}">
+                        <i class="bi bi-credit-card"></i> Métodos de Pago
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light d-flex align-items-center gap-1" th:href="@{'http://localhost:9090/boletos'}">
+                        <i class="bi bi-ticket"></i> Boletos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light d-flex align-items-center gap-1" th:href="@{'http://localhost:9090/reclamos'}">
+                        <i class="bi bi-flag"></i> Reclamos
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
