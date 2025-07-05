@@ -41,7 +41,7 @@ public class PeliculaController {
         model.addAttribute("listaPeliculas", lista);
         model.addAttribute("pelicula", new Pelicula());
         model.addAttribute("categorias", categoriaCliente.listarCategorias());
-        return "peliculas";
+        return "peliculas/index";
     }
 
     
